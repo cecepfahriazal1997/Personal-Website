@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swa">
+    <style>
+        body {
+            font-family: 'Poppins';
+            background-color: #f6f8fd;
+        }
+
+        #navbar .nav>.nav-item>a {
+            color: #15171a !important;
+            font-weight: 700;
+        }
+
+        #navbar .nav>.nav-item>a:hover {
+            font-weight: 800;
+            color: #0d6efd !important;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .project .card {
+            border: none;
+        }
+
+        .project .card:hover {
+            border: 1px solid #0d6efd;
+            transition: 0.2s all ease-in-out;
+            transform: translateY(-8px);
+            
+        }
+
+        .project .card-body {
+            padding: 30px;
+        }
+
+        .div-spacer {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            background-color: white;
+            top: 0;
+            transition: 300ms linear 0s;
+            padding: 10px;
+            z-index: 10000;
+        }
+
+        .sticky.sticky-hero {
+            background-color: transparent;
+            top: 128px;
+            z-index: 500;
+        }
+
+        .skills .content {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: row;
+            gap: 10px !important;
+            width: 100%;
+            height: auto;
+            position: relative;
+            justify-content: center;
+        }
+
+        .skills .card {
+            border-radius: 16px !important;
+            border: 1px solid transparent;
+            cursor: default;
+        }
+
+        .skills .card:hover {
+            border: 1px solid #0d6efd;
+            transition: 0.5s all ease-in-out;
+            transform: translateY(-8px);
+        }
+
+        .skills .title {
+            font-weight: 700;
+            color: #2c2c2c;
+        }
+
+        .skills .description {
+            font-weight: 200;
+            color: #434343;
+        }
+
+        footer .nav {
+            gap: 20px;
+        }
+
+        footer .nav .nav-item:hover {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center align-items-center py-3 mt-3">
+                <a href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="h4" style="font-weight: 600; color: #15171a">Cecep Rokani </span>
+                </a>
+
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Certificates</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section>
+            <div class="container py-5 mb-3">
+                <div class="row flex-lg-row-reverse g-5">
+                    <div class="col-lg-6">
+                        <div class="sticky sticky-hero">
+                            <h1 class="display-4 text-body-emphasis lh-1 mb-3" style="color: #15171a; font-weight: 600;">Hai there im Programmer here !</h1>
+                            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                                world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                                responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/images/profile-2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="div-spacer">&nbsp;</div>
+        </section>
+        <section>
+            <div class="container project project-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row flex-lg-row-reverse g-5">
+                            <div class="col-lg-5">
+                                <img src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" loading="lazy">
+                            </div>
+                            <div class="col-lg-7">
+                                <h1 class="display-6 fw-bold text-body-emphasis mb-3">Learning Management System PenaMob</h1>
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container project project-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row flex-lg-row-reverse g-5">
+                            <div class="col-md-5">
+                                <img src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" loading="lazy">
+                            </div>
+                            <div class="col-lg-7">
+                                <h1 class="display-6 fw-bold text-body-emphasis mb-3">Learning Management System PenaMob</h1>
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-spacer">&nbsp;</div>
+        </section>
+        <section class="container">
+            <div class="skills mb-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/html.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">HTML</h5>
+                                <div class="description">Front-End Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/css.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">CSS</h5>
+                                <div class="description">Front-End Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/vue.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">Vue</h5>
+                                <div class="description">Front-End Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/angular.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">Angular</h5>
+                                <div class="description">Front-End Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/android.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">Android</h5>
+                                <div class="description">Mobile Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/flutter.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">Flutter</h5>
+                                <div class="description">Mobile Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/react-native.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">React Native</h5>
+                                <div class="description">Front-End Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content">
+                            <img width="75" height="75" src="./assets/images/figma.svg" alt="vue">
+                            <div class="d-block">
+                                <h5 class="title">Figma</h5>
+                                <div class="description">UI/UX Design</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-spacer">&nbsp;</div>
+            <div class="div-spacer">&nbsp;</div>
+        </section>
+    </main>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Certificates</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Experience</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Cecep Rokani</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuSticky = document.getElementById("navbar");
+            window.document.addEventListener('scroll', function() {
+                var scroll = window.scrollY
+
+                if (scroll >= 200) {
+                    menuSticky.classList.add("sticky");
+                } else {
+                    menuSticky.classList.remove("sticky");
+                }
+            });
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
